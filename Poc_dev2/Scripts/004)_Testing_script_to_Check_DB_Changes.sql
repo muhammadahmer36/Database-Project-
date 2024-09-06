@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE DBPipelineTestScript5
+	
+AS
+BEGIN
+	SELECT 1
+END
+GO
+--checking

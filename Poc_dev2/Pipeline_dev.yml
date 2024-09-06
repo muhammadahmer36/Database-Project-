@@ -1,0 +1,31 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# Add steps that build, run tests, deploy, and mor:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - test2
+  paths:
+    include:
+      - 'database-projects/Poc_dev2/*'
+
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'Poc_dev2/Poc_dev2.csproj'
+    arguments: '--output $(Build.BinariesDirectory)/publish_output --configuration Release'
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.BinariesDirectory)/publish_output'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

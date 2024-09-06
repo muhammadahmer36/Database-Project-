@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\SP-10_EP- 682-Additional_Information_Task_displaying_paycodes_should_follow_order_setup\1%29_update_selection_list_emp_specific_paycodes.sql" />
+    <None Remove="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\1%29_Alter_MBL_PunchTimeElementsConfig.sql" />
+    <None Remove="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\2%29_Update_TCFieldSelectionList.sql" />
+    <None Remove="Scripts\SP-11_EP- 682-2_Additional_Information_Task displaying_paycodes_should_follow_order_setup\1%29_Alter_MBL_PunchTimeElementsConfig.sql" />
+    <None Remove="Scripts\SP-11_EP- 682-2_Additional_Information_Task displaying_paycodes_should_follow_order_setup\2%29_Update_TCFieldSelectionList.sql" />
+    <None Remove="Scripts\SP-5_EP-424_time_punching\1)_add_new_col_in_time_source_table.sql" />
+    <None Remove="Scripts\SP-5_EP-424_time_punching\2)_insert_pkt_timezone.sql" />
+    <None Remove="Scripts\SP-5_EP-424_time_punching\3)_update_TC_InsertTimeSourceRec_sp_for_utcstimestamp.sql" />
+    <None Remove="Scripts\SP-5_EP-424_time_punching\4)_update_TC_GetAdjustedTime_SP_to_handle_daylight.sql" />
+    <None Remove="Scripts\SP-7_EP-646_GetAllAdditionalInfo\1)_create_GetAll_AdditionalInfo_SP.sql" />
+    <None Remove="Scripts\SP-7-1_EP-628\1_EP-628_change_data_TCfieldselectionlist.sql" />
+    <None Remove="Scripts\SP-7_EP-469_add_offline_bit\1)_add_new_col_in_time_source_table.sql" />
+    <None Remove="Scripts\SP-7_EP-469_add_offline_bit\2)_update_TC_InsertTimeSourceRec_sp_for_utcstimestamp.sql" />
+    <None Remove="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\3)_update_GetAll_AdditionalInfo_SP.sql" />
+    <None Remove="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\4)_Update_TCFieldSelectionList.sql" />
+    <None Remove="Scripts\SP-9_EP-647_Transfer_displays_punches_in_reverse\1%29_alter_TC_gettimesource.sql" />
+    <None Remove="Scripts\SP-9_EP-804_Punch_History_Between_Date_Range\5)_add_new_col_in_time_source_control_table.sql" />
+    <None Remove="Scripts\SP-9_EP-804_Punch_History_Between_Date_Range\6)_alter_TC_gettimesource.sql" />
+    <None Remove="Scripts\SP-9_EP-835_Additional_Information_returns_punch_dropdownlist_twice\1)_update_GetAll_AdditionalInfo_SP.sql" />
+	<None Remove="Scripts\SP=8_EP-650- 2 When I select specifically Employee Specific Pay Codes from WPF, then other selected combo box shows NULL result\1%29 updateSelectionListData_level4.sql" />
+    <None Remove="Scripts\SP-8-EP-674 Process Punches process failed\1%29_Alter_ImportTimeProcessData.sql" />
+    <None Remove="Scripts\SP-8-EP-674 Process Punches process failed\2%29_Alter_ImportTime_ProcessEmployees.sql" />
+    <None Remove="Scripts\SP-8-EP-674 Process Punches process failed\3%29_Alter_TC_GetSumaryInfo_MatchPunches.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\SP-10_EP- 682-Additional_Information_Task_displaying_paycodes_should_follow_order_setup\1)_update_selection_list_emp_specific_paycodes.sql" />
+    <EmbeddedResource Include="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\1)_Alter_MBL_PunchTimeElementsConfig.sql" />
+    <EmbeddedResource Include="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\4%29_Update_TCFieldSelectionList.sql" />
+    <EmbeddedResource Include="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\3%29_update_GetAll_AdditionalInfo_SP.sql" />
+    <EmbeddedResource Include="Scripts\SP-8_EP- 682-3_Additional_Information_Task displaying_paycodes_should_follow_order_setup\2)_Update_TCFieldSelectionList.sql" />
+    <EmbeddedResource Include="Scripts\SP-11_EP- 682-2_Additional_Information_Task displaying_paycodes_should_follow_order_setup\1)_Alter_MBL_PunchTimeElementsConfig.sql" />
+    <EmbeddedResource Include="Scripts\SP-11_EP- 682-2_Additional_Information_Task displaying_paycodes_should_follow_order_setup\2)_Update_TCFieldSelectionList.sql" />
+    <EmbeddedResource Include="Scripts\SP-5_EP-424_time_punching\1%29_add_new_col_in_time_source_table.sql" />
+    <EmbeddedResource Include="Scripts\SP-5_EP-424_time_punching\4%29_update_TC_GetAdjustedTime_SP_to_handle_daylight.sql" />
+    <EmbeddedResource Include="Scripts\SP-5_EP-424_time_punching\3%29_update_TC_InsertTimeSourceRec_sp_for_utcstimestamp.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripts\SP-5_EP-424_time_punching\2%29_insert_pkt_timezone.sql" />
+    <EmbeddedResource Include="Scripts\SP-7_EP-646_GetAllAdditionalInfo\1)_create_GetAll_AdditionalInfo_SP.sql" />
+    <EmbeddedResource Include="Scripts\SP-7-1_EP-628\1_EP-628_change_data_TCfieldselectionlist.sql" />
+    <EmbeddedResource Include="Scripts\SP-7_EP-469_add_offline_bit\1)_add_new_col_in_time_source_table.sql" />
+    <EmbeddedResource Include="Scripts\SP-7_EP-469_add_offline_bit\2%29_update_TC_InsertTimeSourceRec_sp_for_utcstimestamp.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripts\SP-9_EP-804_Punch_History_Between_Date_Range\5%29_add_new_col_in_time_source_control_table.sql" />
+    <EmbeddedResource Include="Scripts\SP-9_EP-804_Punch_History_Between_Date_Range\6%29_alter_TC_gettimesource.sql" />
+    <EmbeddedResource Include="Scripts\SP-9_EP-647_Transfer_displays_punches_in_reverse\1)_alter_TC_gettimesource.sql" />
+    <EmbeddedResource Include="Scripts\SP-9_EP-835_Additional_Information_returns_punch_dropdownlist_twice\1%29_update_GetAll_AdditionalInfo_SP.sql" />
+    <EmbeddedResource Include="Scripts\SP=8_EP-650- 2 When I select specifically Employee Specific Pay Codes from WPF, then other selected combo box shows NULL result\1) updateSelectionListData_level4.sql" />
+    <EmbeddedResource Include="Scripts\SP-8-EP-674 Process Punches process failed\1)_Alter_ImportTimeProcessData.sql" />
+    <EmbeddedResource Include="Scripts\SP-8-EP-674 Process Punches process failed\2)_Alter_ImportTime_ProcessEmployees.sql" />
+    <EmbeddedResource Include="Scripts\SP-8-EP-674 Process Punches process failed\3)_Alter_TC_GetSumaryInfo_MatchPunches.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup" Version="5.0.37" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - qa
+  paths:
+    include:
+      - 'database-projects/HBS_EcoCurrent/*'
+
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'HBS_EcoCurrent/HBS_EcoCurrent.csproj'
+    arguments: '--output $(Build.BinariesDirectory)/publish_output --configuration Release'
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.BinariesDirectory)/publish_output'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
